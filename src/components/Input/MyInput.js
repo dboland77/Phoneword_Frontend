@@ -1,11 +1,12 @@
 import React from "react";
+import styles from "./myInput.module.css";
 
 const MyInput = (props) => {
   return (
     <div>
-    <label>Input: {props.value} </label>
       <input 
-      placeholder = "Please type"
+      className={styles.myInput}
+      placeholder = "Please enter a number"
       onChange={props.onChange} />
     </div>
   );

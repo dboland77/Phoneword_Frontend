@@ -1,7 +1,8 @@
 import React, { useState, useEffect, Fragment } from "react";
 import axios from "axios";
-import MyInput from "./components/MyInput";
+import MyInput from "./components/Input/MyInput";
 import useDebounce from "./Hooks/use-debounce";
+import Keypad from "./components/Keypad/Keypad";
 
 const App = () => {
   const [data, setData] = useState([]);
@@ -15,19 +16,16 @@ const App = () => {
   };
 
   const getData = async (apiURL) => {
-    const response = await 
-    axios.get(apiURL)
-      .catch((err) => {
-        console.log(err);
-      });
-      return response.data
+    const response = await axios.get(apiURL).catch((err) => {
+      console.log(err);
+    });
+    return response.data;
   };
   useEffect(() => {
     if (debouncedInputValue) {
       setFetching(true);
       const apiURL = `http://localhost:8000/?num=${debouncedInputValue}`;
-      getData(apiURL)
-      .then((results) => {
+      getData(apiURL).then((results) => {
         setFetching(false);
         setData(results);
       });
@@ -51,6 +49,7 @@ const App = () => {
           ))}
         </ul>
       )}
+      <Keypad />
     </Fragment>
   );
 };

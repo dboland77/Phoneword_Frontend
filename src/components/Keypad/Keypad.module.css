@@ -1,0 +1,114 @@
+.keypad {
+  position: relative;
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.key {
+  position: absolute;
+  width: 85px;
+  height: 50px;
+  padding: 5px;
+}
+
+.key1 {
+  top: 0;
+  left: 0;
+}
+
+.key2 {
+  top: 0;
+  left: 97.5px;
+}
+
+.key3 {
+  top: 0;
+  left: 195px;
+}
+
+.key4 {
+  top: 60px;
+  left: 0;
+}
+
+.key5 {
+  top: 60px;
+  left: 97.5px;
+}
+
+.key6 {
+  top: 60px;
+  left: 195px;
+}
+
+.key7 {
+  top: 120px;
+  left: 0;
+}
+
+.key8 {
+  top: 120px;
+  left: 97.5px;
+}
+
+.key9 {
+  top: 120px;
+  left: 195px;
+}
+
+.keystar {
+  top: 180px;
+  left: 0;
+}
+
+.key0 {
+  top: 180px;
+  left: 97.5px;
+}
+
+.keyspace {
+  top: 180px;
+  left: 195px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.428571429;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+.btn:focus {
+  outline: thin dotted #333;
+  outline: 5px auto;
+  outline-offset: -2px;
+}
+
+.btn:hover,
+.btn:focus {
+  color: #333333;
+  text-decoration: none;
+}
+
+.btn:active,
+.btn.active {
+  outline: 0;
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+
+.btn.disabled,
+.btn {
+  pointer-events: none;
+  cursor: not-allowed;
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+  box-shadow: none;
+}

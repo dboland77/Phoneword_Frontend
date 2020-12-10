@@ -1,5 +1,7 @@
 # Overview
-Connects to the t9 phoneword backend API
+Connects to the t9 phoneword backend API. 
+
+Visual Keypad for input has been added.
 
 # Tech stack
 1. ReactJS
