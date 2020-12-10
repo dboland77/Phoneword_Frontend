@@ -1,0 +1,66 @@
+.key {
+  position: absolute;
+  width: 85px;
+  height: 50px;
+  padding: 5px;
+}
+
+.key1 {
+  top: 0;
+  left: 0;
+}
+
+.key2 {
+  top: 0;
+  left: 97.5px;
+}
+
+.key3 {
+  top: 0;
+  left: 195px;
+}
+
+.key4 {
+  top: 60px;
+  left: 0;
+}
+
+.key5 {
+  top: 60px;
+  left: 97.5px;
+}
+
+.key6 {
+  top: 60px;
+  left: 195px;
+}
+
+.key7 {
+  top: 120px;
+  left: 0;
+}
+
+.key8 {
+  top: 120px;
+  left: 97.5px;
+}
+
+.key9 {
+  top: 120px;
+  left: 195px;
+}
+
+.keystar {
+  top: 180px;
+  left: 0;
+}
+
+.key0 {
+  top: 180px;
+  left: 97.5px;
+}
+
+.keyspace {
+  top: 180px;
+  left: 195px;
+}
