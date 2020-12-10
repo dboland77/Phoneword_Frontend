@@ -1,11 +1,14 @@
 # Overview
 Connects to the t9 phoneword backend API. 
 
-Visual Keypad for input has been added.
+Visual Keypad for input has been added (with CSS)
+
+Project structure enhanced and redux added
 
 # Tech stack
 1. ReactJS
-2. Axios
+1. Axios
+1. Redux
 
 
 # React frontend future improvements
