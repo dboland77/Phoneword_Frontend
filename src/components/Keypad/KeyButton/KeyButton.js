@@ -10,7 +10,8 @@ const KeyButton = (props) => {
   let bShow = !isNaN(parseInt(props.num));
 
   return (
-    <button className={temp} disabled={props.disabled} value={props.value}>
+    <button className={temp} disabled={props.disabled} value={props.value}
+    onClick={() => { props.onclick(props.num)}}>
       {bShow ? <span>{props.num}</span> : ""}
       <br></br>
       <small>{props.text}</small>

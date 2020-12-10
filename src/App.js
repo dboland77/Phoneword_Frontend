@@ -15,6 +15,10 @@ const App = () => {
     setInputValue(event.target.value);
   };
 
+  const handleKeyClick = (value) => {
+    setInputValue(value);
+  };
+
   const getData = async (apiURL) => {
     const response = await axios.get(apiURL).catch((err) => {
       console.log(err);
@@ -49,7 +53,7 @@ const App = () => {
           ))}
         </ul>
       )}
-      <Keypad />
+      <Keypad onclick={handleKeyClick} />
     </Fragment>
   );
 };
