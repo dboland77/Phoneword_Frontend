@@ -16,8 +16,16 @@ const App = () => {
   };
 
   const handleKeyClick = (value) => {
-    setInputValue(value);
+    const newValue = `${inputValue}${value}`;
+    setInputValue(newValue);
   };
+
+  const handleBackspaceClick = (value) => {
+    if (inputValue !== ""){
+      const newValue = inputValue.slice(0,-1);
+      setInputValue(newValue);
+    }
+  }
 
   const getData = async (apiURL) => {
     const response = await axios.get(apiURL).catch((err) => {
@@ -25,6 +33,8 @@ const App = () => {
     });
     return response.data;
   };
+
+
   useEffect(() => {
     if (debouncedInputValue) {
       setFetching(true);
@@ -53,7 +63,7 @@ const App = () => {
           ))}
         </ul>
       )}
-      <Keypad onclick={handleKeyClick} />
+      <Keypad onclick={handleKeyClick} onbackclick={handleBackspaceClick} />
     </Fragment>
   );
 };

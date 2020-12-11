@@ -5,9 +5,12 @@ const MyInput = (props) => {
   return (
     <div>
       <input 
+      type="text"
+      disabled = "disabled"
       className={styles.myInput}
       placeholder = "Please enter a number"
-      onChange={props.onChange} />
+      onChange={props.onChange}
+      value={props.value} />
     </div>
   );
 };

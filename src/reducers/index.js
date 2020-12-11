@@ -1,7 +1,9 @@
 import { CYCLE_WORD, DELETE_CHAR } from "../constants";
 
 const initialState = {
-  words: [],
+  inputValue: [],
+  data:[],
+  isFetching: false
 };
 
 const wordReducer = (state = initialState, action) => {
