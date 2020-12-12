@@ -1,66 +1,66 @@
 .key {
-  position: absolute;
-  width: 85px;
-  height: 50px;
-  padding: 5px;
+  padding: 10px;
+  font-size: 20px;
+  width: 100px;
+  height: 100px;
 }
 
 .key1 {
-  top: 0;
-  left: 0;
+  grid-row: 3;
+  grid-column: 1;
 }
 
 .key2 {
-  top: 0;
-  left: 97.5px;
+  grid-row: 3;
+  grid-column: 2;
 }
 
 .key3 {
-  top: 0;
-  left: 195px;
+  grid-row: 3;
+  grid-column: 3;
 }
 
 .key4 {
-  top: 60px;
-  left: 0;
+  grid-row: 4;
+  grid-column: 1;
 }
 
 .key5 {
-  top: 60px;
-  left: 97.5px;
+  grid-row: 4;
+  grid-column: 2;
 }
 
 .key6 {
-  top: 60px;
-  left: 195px;
+  grid-row: 4;
+  grid-column: 3;
 }
 
 .key7 {
-  top: 120px;
-  left: 0;
+  grid-row: 5;
+  grid-column: 1;
 }
 
 .key8 {
-  top: 120px;
-  left: 97.5px;
+  grid-row: 5;
+  grid-column: 2;
 }
 
 .key9 {
-  top: 120px;
-  left: 195px;
+  grid-row: 5;
+  grid-column: 3;
 }
 
 .keystar {
-  top: 180px;
-  left: 0;
+  grid-row: 6;
+  grid-column: 1;
 }
 
 .key0 {
-  top: 180px;
-  left: 97.5px;
+  grid-row: 6;
+  grid-column: 2;
 }
 
 .keyspace {
-  top: 180px;
-  left: 195px;
+  grid-row: 6;
+  grid-column: 3;
 }

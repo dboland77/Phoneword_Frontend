@@ -1,4 +1,4 @@
-/* .keypad {
+.content {
   height: 100vh;
   width: 100vw;
   display: grid;
@@ -10,4 +10,4 @@
   box-shadow: 2px 2px 4px 4px hsla(215, 85%, 5%, 1);
   border: 1px solid var(--off-white);
   background: hsla(218, 85%, 10%, 1);
-} */
+}

@@ -1,13 +1,12 @@
 import styles from "./Keypad.module.css";
 import KeyButton from "./KeyButton/KeyButton";
 import Backspace from "./Backspace/Backspace";
-import { Fragment } from "react";
+import myInput from "../Input/MyInput";
+
 
 const Keypad = (props) => {
   return (
-    <Fragment>
-      <Backspace onclick={props.onbackclick} />
-      <div className={styles.keypad}>
+      <div>
         <KeyButton num={1} disabled="disabled" onclick={props.onclick} />
         <KeyButton num={2} text="abc" onclick={props.onclick} />
         <KeyButton num={3} text="def" onclick={props.onclick} />
@@ -31,7 +30,6 @@ const Keypad = (props) => {
           onclick={props.onclick}
         />
       </div>
-    </Fragment>
   );
 };
 

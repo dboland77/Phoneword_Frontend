@@ -1,8 +1,9 @@
-import React, { useState, useEffect, Fragment } from "react";
+import React, { useState, useEffect } from "react";
 import axios from "axios";
 import MyInput from "./components/Input/MyInput";
 import useDebounce from "./Hooks/use-debounce";
 import Keypad from "./components/Keypad/Keypad";
+import Display from "./components/Display/Display";
 
 const App = () => {
   const [data, setData] = useState([]);
@@ -21,11 +22,11 @@ const App = () => {
   };
 
   const handleBackspaceClick = (value) => {
-    if (inputValue !== ""){
-      const newValue = inputValue.slice(0,-1);
+    if (inputValue !== "") {
+      const newValue = inputValue.slice(0, -1);
       setInputValue(newValue);
     }
-  }
+  };
 
   const getData = async (apiURL) => {
     const response = await axios.get(apiURL).catch((err) => {
@@ -33,7 +34,6 @@ const App = () => {
     });
     return response.data;
   };
-
 
   useEffect(() => {
     if (debouncedInputValue) {
@@ -49,22 +49,23 @@ const App = () => {
   }, [debouncedInputValue]);
 
   return (
-    <Fragment>
-      <MyInput value={inputValue} onChange={handleInputChange} />
-
-      {isFetching && <h1>Fetching result ... </h1>}
-
-      {data === "Nothing entered" && <h1>{data}</h1>}
-
-      {data !== "Nothing entered" && (
-        <ul>
-          {data.map((word, index) => (
-            <li key={index}>{word}</li>
-          ))}
-        </ul>
-      )}
+    <Display>
       <Keypad onclick={handleKeyClick} onbackclick={handleBackspaceClick} />
-    </Fragment>
+      <MyInput value={inputValue} onChange={handleInputChange} />
+      <div>
+        {isFetching && <h1>Fetching result ... </h1>}
+
+        {data === "Nothing entered" && <h1>{data}</h1>}
+
+        {data !== "Nothing entered" && (
+          <ul>
+            {data.map((word, index) => (
+              <li key={index}>{word}</li>
+            ))}
+          </ul>
+        )}
+      </div>
+    </Display>
   );
 };
 

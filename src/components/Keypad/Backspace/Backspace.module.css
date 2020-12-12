@@ -1,5 +1,4 @@
 .backspace {
-  width: 85px;
-  height: 50px;
-  padding: 5px;
+  grid-row: 2;
+  grid-column: 1/2;
 }

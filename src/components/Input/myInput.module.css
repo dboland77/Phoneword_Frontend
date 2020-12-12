@@ -1,7 +1,23 @@
 .myInput {
-  position: relative;
+  grid-row: 3;
+  grid-column: 1;
   margin-top: 10px;
   font-size: 18px;
-  width: 275px;
-  Height: 40px;
+  /* width: 275px;
+  Height: 40px; */
 }
+
+/* .myInput {
+  grid-row: 1;
+  grid-column: 1 / 5;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: wrap-reverse;
+  padding-right: 10px;
+  padding-left: 10px;
+  overflow: hidden;
+  margin-bottom: 10px;
+  grid-gap: 3px;
+  margin-top: 10px;
+} */
