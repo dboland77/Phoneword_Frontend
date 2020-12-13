@@ -3,11 +3,11 @@ code {
     monospace;
 }
 
-/* :root {
+ :root {
   --bg-color: rgb(114, 140, 177);
   --display-color: hsla(215, 100%, 72%, 1);
   --off-white: hsla(215, 85%, 95%, 1);
-} */
+} 
 
 * {
   box-sizing: border-box;
@@ -15,12 +15,15 @@ code {
   border-radius: 3px;
 }
 
-button::-moz-focus-inner {
-  border: 0;
+
+li {
+  list-style: none;
+  font-size: 20px;
+  padding-left: 20px;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-  background-color: var(--bg-color);
+h1{
+  padding-left: 20px;
 }
+
+

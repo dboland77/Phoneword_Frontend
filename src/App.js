@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, Fragment} from "react";
 import axios from "axios";
-import MyInput from "./components/Input/MyInput";
+//import MyInput from "./components/Input/MyInput";
 import useDebounce from "./Hooks/use-debounce";
 import Keypad from "./components/Keypad/Keypad";
 import Display from "./components/Display/Display";
@@ -50,19 +50,26 @@ const App = () => {
 
   return (
     <Display>
-      <Keypad onclick={handleKeyClick} onbackclick={handleBackspaceClick} />
-      <MyInput value={inputValue} onChange={handleInputChange} />
+      <Keypad 
+      onclick={handleKeyClick} 
+      onbackclick={handleBackspaceClick} 
+        inputvalue = {inputValue}
+        onchange={handleInputChange}
+      />
       <div>
         {isFetching && <h1>Fetching result ... </h1>}
 
         {data === "Nothing entered" && <h1>{data}</h1>}
 
         {data !== "Nothing entered" && (
+          <Fragment>
+          <h1> Possible words </h1>
           <ul>
             {data.map((word, index) => (
               <li key={index}>{word}</li>
             ))}
           </ul>
+          </Fragment>
         )}
       </div>
     </Display>

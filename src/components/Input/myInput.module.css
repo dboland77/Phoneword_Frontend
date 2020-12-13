@@ -1,23 +1,7 @@
 .myInput {
-  grid-row: 3;
-  grid-column: 1;
-  margin-top: 10px;
-  font-size: 18px;
-  /* width: 275px;
-  Height: 40px; */
+  grid-row: 1;
+  grid-column: 1/4; 
+  font-size: 22px; 
+  color: var(--off-white);
 }
 
-/* .myInput {
-  grid-row: 1;
-  grid-column: 1 / 5;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  flex-wrap: wrap-reverse;
-  padding-right: 10px;
-  padding-left: 10px;
-  overflow: hidden;
-  margin-bottom: 10px;
-  grid-gap: 3px;
-  margin-top: 10px;
-} */

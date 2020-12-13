@@ -1,12 +1,13 @@
 import styles from "./Keypad.module.css";
 import KeyButton from "./KeyButton/KeyButton";
-import Backspace from "./Backspace/Backspace";
-import myInput from "../Input/MyInput";
-
+import Backspace from "../Backspace/Backspace";
+import MyInput from "../Input/MyInput";
 
 const Keypad = (props) => {
   return (
-      <div>
+      <div className={styles.keypad}>
+      <MyInput value={props.inputvalue} onChange={props.onchange}/>
+      <Backspace onclick={props.onbackclick}/>
         <KeyButton num={1} disabled="disabled" onclick={props.onclick} />
         <KeyButton num={2} text="abc" onclick={props.onclick} />
         <KeyButton num={3} text="def" onclick={props.onclick} />

@@ -3,7 +3,6 @@ import styles from "./myInput.module.css";
 
 const MyInput = (props) => {
   return (
-    <div>
       <input 
       type="text"
       disabled = "disabled"
@@ -11,7 +10,6 @@ const MyInput = (props) => {
       placeholder = "Please enter a number"
       onChange={props.onChange}
       value={props.value} />
-    </div>
   );
 };
 

@@ -46,11 +46,13 @@ latest version of React (v17.0.1 currently).
 
 1. Add validation to the input
 1. Add full error handling
-1. Hook up the Redux properly (Due to time I am demonstrating knowledge of 
-how redux works without full implementation)
+1. Hook up the Redux properly (Due to time I am demonstrating knowledge of
+   how redux works without full implementation)
 1. Add some more colour / CSS styling / UI
 1. Add keypress event handling to allow the user to type
 1. Extend to allow full messages
 1. Make the app responsive (Grid / Flexbox / media queries)
 1. Add more useful messaging when the API call does
    not return as expected (Currently will just display "Fetching result")
+1. Add a message when no words are found
+1. Refactor and tidy up
