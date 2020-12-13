@@ -7,6 +7,14 @@ The possible letter permutations will be displayed in a list.
 The resulting list will be retrieved automatically from the backend
 API with a slight delay to allow for finished input.
 
+Enhanced:
+The app will show valid words from a dictionary rather than letter permutations.
+
+# To run
+1. Download or clone this repo
+1. cd to the project folder and run npm install
+1. Type npm start (please make sure the backend is already running to retrieve words)
+
 # Build progress
 
 1. Create React app bootstrapped project
@@ -24,6 +32,10 @@ API with a slight delay to allow for finished input.
 1. redux added (not hooked through)
 
 1. Backspace button added
+
+1. Project structure and CSS enhanced
+
+1. Word list display added
 
 # Tech stack
 
