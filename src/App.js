@@ -38,7 +38,7 @@ const App = () => {
   useEffect(() => {
     if (debouncedInputValue) {
       setFetching(true);
-      const apiURL = `http://localhost:8000/?num=${debouncedInputValue}`;
+      const apiURL = `${process.env.REACT_APP_API_URL}/?num=${debouncedInputValue}`;
       getData(apiURL).then((results) => {
         setFetching(false);
         setData(results);
